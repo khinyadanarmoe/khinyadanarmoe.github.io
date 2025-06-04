@@ -14,16 +14,34 @@
         .welcome-container {
             max-width: 800px;
             margin: 50px auto;
+            border: 2px solid #ccc; 
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+            position: absolute; top: 40%; left: 50%; 
+            transform: translate(-50%, -50%);
+            
         }
+
         h1 {
             color: #333;
         }
+
+
+
     </style>
 </head>
 <body>
     <div class="welcome-container">
-        <h1>Welcome to My Personal Website</h1>
-        <p>Hello! I'm glad you're here. This is my personal space on the web where I share my thoughts and work.</p>
+        <h1>Welcome to My Website</h1>
+        <img src="cat.jpeg" alt="cat image" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover; animation: rotate 5s linear infinite;">
+        <style>
+            @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+            }
+        </style>
+        <p>Hello! My name is Khin Yadanar Moe. This is my first personal website from Wed App Development Course, Section 542.</p>
     </div>
 </body>
 </html>
